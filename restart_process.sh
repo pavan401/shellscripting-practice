@@ -6,7 +6,7 @@ SERVICE_NAME="httpd"
 pgrep $PROCESS_NAME >> /dev/null
 
 if [ $? -eq 0 ]; then
- echo "$PROCESS_NAME is running. No action required"
+ echo "$PROCESS_NAME is running. No action requires"
 else
  echo "$PROCESS_NAME is not running. I am restarting $PROCESS_NAME"
   systemctl restart $SERVICE_NAME
